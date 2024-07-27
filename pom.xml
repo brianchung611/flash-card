@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bcmw</groupId>
 	<artifactId>flash-card</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>flash-card</name>
 	<description>Flash card app</description>
 	<url/>
