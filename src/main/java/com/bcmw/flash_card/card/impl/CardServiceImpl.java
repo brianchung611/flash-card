@@ -34,7 +34,7 @@ public class CardServiceImpl implements CardService {
             Card card = cardOptional.get();
             card.setQuestion(updatedCard.getQuestion());
             card.setHint(updatedCard.getHint());
-            card.setAnswer(updatedCard.getHint());
+            card.setAnswer(updatedCard.getAnswer());
             cardRepository.save(card);
             return true;
         }
