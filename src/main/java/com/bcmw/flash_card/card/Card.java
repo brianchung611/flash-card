@@ -1,9 +1,7 @@
 package com.bcmw.flash_card.card;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.bcmw.flash_card.account.Account;
+import jakarta.persistence.*;
 
 @Entity
 public class Card {
@@ -16,6 +14,9 @@ public class Card {
     private String hint;
 
     private String answer;
+
+    @ManyToOne
+    private Account account;
 
     public Card() {
     }
@@ -50,5 +51,13 @@ public class Card {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 }
